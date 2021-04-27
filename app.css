@@ -1,120 +1,76 @@
-.blue {
-  color: #03abea; }
+/*
+Error: Undefined mixin 'flexbox'.
+        on line 42 of app.scss, in `flexbox'
+        from line 42 of app.scss
 
-.green {
-  color: #94c641; }
+37:   width: 200px;
+38: }
+39: 
+40: .logo-div {
+41:   width: 100vw;
+42:   @include flexbox() {
+43:   }
+44:   @include justify-content(center) {
+45:   }
+46: }
+47: 
 
-html {
-  padding: 0;
-  margin: 0; }
-
-body {
-  padding: 0;
-  margin: 0; }
-
-h1 {
-  color: #333;
-  font-size: 50px;
-  font-family: "Oswald","Lato", sans-serif;
-  font-weight: 700;
-  line-height: 110%; }
-
-h2 {
-  font-size: 26px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #333;
-  padding-bottom: 10px;
-  line-height: 1em;
-  font-weight: 500; }
-
-p {
-  font-size: 14px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #666; }
-
-.logo {
-  margin-top: 15px;
-  width: 200px; }
-
-.logo-div {
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -ms-flex-pack: center; }
-
-.owner-message {
-  padding-top: 30px;
-  width: 80vw;
-  margin: 0 auto; }
-  .owner-message h2 {
-    text-align: center;
-    line-height: .5em; }
-
-.social-icon {
-  width: 20vw;
-  padding: 5vw 10vw; }
-
-.yellow-star {
-  color: #FBBC03; }
-
-.centered-div {
-  width: 500px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -ms-flex-pack: center; }
-  .centered-div h2 {
-    text-align: center; }
-
-.center {
-  text-align: center; }
-
-.full-width {
-  width: 100%; }
-
-.thumb-icon {
-  padding: 15px 50px; }
-
-.thumb-icon-box {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -ms-flex-pack: center; }
-
-.parent-flex-div {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center; }
-
-.show {
-  display: unset; }
-
-.hidden {
-  visibility: hidden;
-  max-height: 0; }
-
-/*# sourceMappingURL=app.css.map */
+Backtrace:
+app.scss:42:in `flexbox'
+app.scss:42
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in `with_mixin'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/julievanderlaan/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'flexbox'.\A         on line 42 of app.scss, in `flexbox'\A         from line 42 of app.scss\A \A 37:   width: 200px;\A 38: }\A 39: \A 40: .logo-div {\A 41:   width: 100vw;\A 42:   @include flexbox() {\A 43:   }\A 44:   @include justify-content(center) {\A 45:   }\A 46: }\A 47: "; }
