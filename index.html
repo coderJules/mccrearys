@@ -2,30 +2,49 @@
 <html>
   <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Client Reviews</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-  <meta name="robots" content="noindex">
- <link rel="stylesheet" href="app.css" type="text/css">
- <script src="https://kit.fontawesome.com/17ad81cf32.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="app.css" type="text/css">
+    <script src="https://kit.fontawesome.com/17ad81cf32.js" crossorigin="anonymous"></script>
   </head>
+
   <body>
     <div id="reviews" class="hidden">
-      I'm a review
+      <a href="https://mccrearyshealthyhomes.com/" target="_blank" class="logo-div">
+        <img src="/MHH Logo.svg" class="logo"/>
+      </a>
+      <div class="owner-message">
+        <h2>Leave us a review </h2>
+        <h2 class="yellow-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h2
+         >
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <a href="https://www.google.com/maps/place/McCreary's+Healthy+Homes+Inc./@42.7467277,-84.4021447,15z/data=!4m2!3m1!1s0x0:0x19185a0f1974e2ec?sa=X&ved=2ahUKEwivp5zhjtHuAhUbOs0KHSamBBMQ_BIwCnoECBcQBQ" target=" _blank" class="logo-div">
+        <img src="/Review Us - Sticker.svg" class="social-icon" >
+      </a>
+      <a href="https://www.facebook.com/McCrearysHealthyHomes/" target="_blank" class="logo-div">
+        <img src="/facebook logo.svg" class="social-icon"/>
+      </a>
     </div>
+
     <div id="form" class="hidden">
+      <div class="logo-div">
+      <img src="/MHH Logo.svg" class="logo"/>
+    </div>
       I'm a form
     </div>
-   <div class="parent-flex-div">
-    <div class="centered-div" id="interaction">
-       <h2 class="full-width"> How would you rate our service?</h2>
-         <div class="thumb-icon-box">
-         <h1 class="green thumb-icon center" onclick="displayReviews()"><i class="far fa-thumbs-up"></i></h1>
-         <h1 class="blue thumb-icon center" onclick="displayForm()"><i class="far fa-thumbs-down"></i></h1>
+
+    <div class="parent-flex-div">
+      <div class="centered-div" id="interaction">
+        <h2 class="full-width"> How would you rate our service?</h2>
+        <div class="thumb-icon-box">
+          <h1 class="green thumb-icon center" onclick="displayReviews()"><i class="far fa-thumbs-up"></i></h1>
+          <h1 class="blue thumb-icon center" onclick="displayForm()"><i class="far fa-thumbs-down"></i></h1>
+        </div>
       </div>
     </div>
-  </div>
-
 
   </body>
 </html>

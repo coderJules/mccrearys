@@ -207,6 +207,16 @@
 
 
 // site-font
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   color: #333;
   font-size: 50px;
@@ -224,6 +234,47 @@ h2 {
   font-weight: 500;
 }
 
+p {
+  font-size: 14px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #666
+}
+
+.logo {
+  margin-top: 15px;
+  width: 200px;
+}
+
+.logo-div {
+  width: 100vw;
+  @include flexbox() {
+  }
+  @include justify-content(center) {
+  }
+}
+
+
+
+// Review Section
+
+.owner-message {
+  padding-top: 30px;
+  width: 80vw;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+    line-height: .5em;
+  }
+}
+
+.social-icon {
+  width: 20vw;
+  padding: 5vw 10vw;
+}
+
+.yellow-star {
+  color: #FBBC03;
+}
 // Initial User Interaction
 
 .centered-div {
