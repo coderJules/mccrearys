@@ -6,8 +6,45 @@
     <title>Client Reviews</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
   <meta name="robots" content="noindex">
+ <link rel="stylesheet" href="app.css" type="text/css">
+ <script src="https://kit.fontawesome.com/17ad81cf32.js" crossorigin="anonymous"></script>
   </head>
   <body>
-  <h1>This is a test</h1>
+    <div id="reviews" class="hidden">
+      I'm a review
+    </div>
+    <div id="form" class="hidden">
+      I'm a form
+    </div>
+   <div class="parent-flex-div">
+    <div class="centered-div" id="interaction">
+       <h2 class="full-width"> How would you rate our service?</h2>
+         <div class="thumb-icon-box">
+         <h1 class="green thumb-icon center" onclick="displayReviews()"><i class="far fa-thumbs-up"></i></h1>
+         <h1 class="blue thumb-icon center" onclick="displayForm()"><i class="far fa-thumbs-down"></i></h1>
+      </div>
+    </div>
+  </div>
+
+
   </body>
 </html>
+
+<script>
+  function displayReviews() {
+    var reviewDiv = document.getElementById('reviews');
+    var inquiry = document.getElementById('interaction');
+    reviewDiv.classList.add("show");
+    reviewDiv.classList.remove("hidden");
+    inquiry.classList.add("hidden");
+  }
+
+function displayForm() {
+    var formPage = document.getElementById('form');
+    var inquiry = document.getElementById('interaction');
+    formPage.classList.add("show");
+    formPage.classList.remove("hidden");
+    inquiry.classList.add("hidden");
+
+}
+</script>
