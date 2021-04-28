@@ -235,16 +235,18 @@ p {
 }
 
 .logo {
-  margin-top: 15px;
-  width: 200px;
+  width: 60vw;
+  margin: 5px 20vw;
 }
 
 .logo-div {
   width: 100vw;
-  @include flexbox() {
-  }
-  @include justify-content(center) {
-  }
+  margin: 0 auto;
+  // @include flexbox() {
+
+  // }
+  // @include justify-content(center) {
+  // }
 }
 
 
@@ -262,11 +264,15 @@ p {
 
 .social-icon {
   width: 20vw;
-  padding: 5vw 10vw;
+  padding: 5vw 40vw;
+  margin: 0 auto;
 }
 
 .yellow-star {
   color: #FBBC03;
+  i {
+  padding: 0 1px;
+  }
 }
 // Initial User Interaction
 
@@ -309,7 +315,8 @@ p {
 }
 
 .parent-flex-div {
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
    @include flexbox() {
   }
   align-items: center;
