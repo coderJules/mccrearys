@@ -210,8 +210,10 @@ html {
 }
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0 0 30px 0;
+  position: relative;
+  min-height: calc(100vh - 30px);
 }
 
 h1 {
@@ -234,6 +236,46 @@ p {
   color: #666
 }
 
+.header {
+  background-color: #94c641;
+  height: 40px;
+}
+
+.header-text {
+  h4 {
+    color: white;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  i {
+    font-size: 14px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.footer {
+  height: auto;
+  width: 100vw;
+  background-color: #181818;
+  padding: 3px 0;
+  position: absolute;
+  bottom: 0;
+  p {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    text-align: center;
+  }
+
+}
+
 .logo {
   width: 60vw;
   margin: 5px 20vw;
@@ -249,12 +291,15 @@ p {
   // }
 }
 
+// Form section
 
+.cognito {
+  padding-top: 30px;
+}
 
 // Review Section
 
 .owner-message {
-  padding-top: 30px;
   width: 80vw;
   margin: 0 auto;
   h2 {
@@ -315,8 +360,9 @@ p {
 }
 
 .parent-flex-div {
-  min-height: 100vh;
-  max-height: 100vh;
+  min-height: calc(100vh - 132px);
+  max-height: calc(100vh - 132px);
+
    @include flexbox() {
   }
   align-items: center;
