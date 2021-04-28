@@ -61,6 +61,8 @@ p {
     color: #666;
     margin: 0;
     text-align: center; }
+  .footer a {
+    text-decoration: none; }
 
 .logo {
   width: 60vw;
@@ -70,8 +72,11 @@ p {
   width: 100vw;
   margin: 0 auto; }
 
-.cognito {
+.cognito-form {
   padding-top: 30px; }
+
+.unsubscribe {
+  padding: 30px 15px; }
 
 .owner-message {
   width: 80vw;
