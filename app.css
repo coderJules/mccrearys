@@ -1,3 +1,9 @@
+.blue {
+  color: #03abea; }
+
+.green {
+  color: #94c641; }
+
 html {
   padding: 0;
   margin: 0; }
@@ -10,15 +16,12 @@ h1 {
   color: #333;
   font-size: 50px;
   font-family: "Oswald","Lato", sans-serif;
-  font-weight: 700;
-  line-height: 110%; }
+  font-weight: 700; }
 
 h2 {
   font-size: 26px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #333;
-  padding-bottom: 10px;
-  line-height: 1em;
   font-weight: 500; }
 
 p {
@@ -34,6 +37,7 @@ p {
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -moz-justify-content: center;
   -ms-justify-content: center;
@@ -46,8 +50,7 @@ p {
   width: 80vw;
   margin: 0 auto; }
   .owner-message h2 {
-    text-align: center;
-    line-height: .5em; }
+    text-align: center; }
 
 .social-icon {
   width: 20vw;
@@ -57,10 +60,11 @@ p {
   color: #FBBC03; }
 
 .centered-div {
-  width: 500px;
+  width: auto;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -90,6 +94,7 @@ p {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -moz-justify-content: center;
   -ms-justify-content: center;
@@ -101,6 +106,7 @@ p {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center; }
 
@@ -108,7 +114,15 @@ p {
   display: unset; }
 
 .hidden {
-  visibility: hidden;
+  display: none;
   max-height: 0; }
+
+img {
+  padding: 0;
+  margin: 0; }
+
+a {
+  padding: 0;
+  margin: 0; }
 
 /*# sourceMappingURL=app.css.map */

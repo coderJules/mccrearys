@@ -3,6 +3,7 @@
 @mixin flexbox() {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 @content;
 }
@@ -192,6 +193,15 @@
   }
 }
 
+// site colors
+.blue {
+  color: #03abea
+}
+
+.green {
+  color: #94c641
+}
+
 
 // site-font
 html {
@@ -209,15 +219,12 @@ h1 {
   font-size: 50px;
   font-family: "Oswald","Lato", sans-serif;
   font-weight: 700;
-  line-height: 110%;
 }
 
 h2 {
   font-size: 26px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #333;
-  padding-bottom: 10px;
-  line-height: 1em;
   font-weight: 500;
 }
 
@@ -250,7 +257,6 @@ p {
   margin: 0 auto;
   h2 {
     text-align: center;
-    line-height: .5em;
   }
 }
 
@@ -265,7 +271,7 @@ p {
 // Initial User Interaction
 
 .centered-div {
-  width: 500px;
+  width: auto;
   margin: 0 auto;
   @include flexbox() {
   }
@@ -314,8 +320,18 @@ p {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
   max-height: 0;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  padding: 0;
+  margin: 0;
 }
 
 
