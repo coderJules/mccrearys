@@ -273,6 +273,9 @@ p {
     margin: 0;
     text-align: center;
   }
+  a {
+    text-decoration: none;
+  }
 
 }
 
@@ -293,8 +296,14 @@ p {
 
 // Form section
 
-.cognito {
+.cognito-form {
   padding-top: 30px;
+}
+
+// Usubscribe page
+
+.unsubscribe {
+  padding: 30px 15px;
 }
 
 // Review Section
