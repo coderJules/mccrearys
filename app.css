@@ -33,27 +33,46 @@ p {
 
 .header {
   background-color: #94c641;
-  height: 40px; }
+  height: 40px;
+  text-align: center; }
+  .header a {
+    display: inline-block;
+    text-decoration: none;
+    color: white; }
+  .header h4 {
+    color: white;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    font-weight: 700;
+    line-height: 40px; }
+  .header i {
+    font-size: 14px; }
+  @media only screen and (min-width: 1026px) {
+    .header {
+      padding: 0 20vw;
+      text-align: right; }
+      .header h4 {
+        text-align: right; } }
 
-.header-text h4 {
-  color: white;
+.btn {
+  margin-left: 15px;
+  background: #03abea;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Lato",sans-serif;
   font-size: 16px;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  margin: 0;
-  font-weight: 700;
-  line-height: 40px; }
-.header-text i {
-  font-size: 14px; }
-.header-text a {
-  text-decoration: none;
-  color: white; }
+  transition: all .2s ease-out; }
 
 .footer {
   height: auto;
   width: 100vw;
   background-color: #181818;
-  padding: 3px 0;
+  padding: 10px 3px;
   position: absolute;
   bottom: 0; }
   .footer p {
@@ -67,6 +86,18 @@ p {
 .logo {
   width: 60vw;
   margin: 5px 20vw; }
+  @media only screen and (max-height: 450px) and (orientation: landscape) {
+    .logo {
+      width: 40vw;
+      margin: 5px 30vw; } }
+  @media only screen and (min-width: 768px) and (min-height: 450px) {
+    .logo {
+      width: 40vw;
+      margin: 5px 30vw; } }
+  @media only screen and (min-width: 1026px) {
+    .logo {
+      width: 20vw;
+      margin: 15px 60vw 15px 20vw; } }
 
 .logo-div {
   width: 100vw;
@@ -75,19 +106,79 @@ p {
 .cognito-form {
   padding-top: 30px; }
 
+.form-div {
+  margin: 60px 60px; }
+
 .unsubscribe {
-  padding: 30px 15px; }
+  padding: 30px 15px;
+  margin: 0 auto; }
 
 .owner-message {
   width: 80vw;
   margin: 0 auto; }
   .owner-message h2 {
     text-align: center; }
+  @media only screen and (min-width: 768px) and (min-height: 450px) {
+    .owner-message {
+      padding-top: 60px; }
+      .owner-message h2 {
+        font-size: 36px; }
+      .owner-message p {
+        font-size: 16px; } }
+  @media only screen and (min-width: 1026px) {
+    .owner-message {
+      width: 60vw; } }
 
 .social-icon {
-  width: 20vw;
-  padding: 5vw 40vw;
+  width: 15vw;
+  padding: 5vw 42.5vw;
   margin: 0 auto; }
+  @media only screen and (min-width: 768px) and (min-height: 450px) {
+    .social-icon {
+      width: 10vw;
+      padding: 5vw 45vw; } }
+  @media only screen and (min-width: 961px) and (orientation: landscape) {
+    .social-icon {
+      position: absolute;
+      width: 100px;
+      padding: 30px; } }
+  @media only screen and (min-width: 1026px) {
+    .social-icon {
+      position: absolute;
+      width: 100px;
+      padding: 30px; } }
+
+@media only screen and (min-width: 961px) and (orientation: landscape) {
+  .right-div {
+    width: 50vw;
+    float: right;
+    position: relative; }
+    .right-div .social-icon {
+      position: absolute;
+      left: 0; } }
+@media only screen and (min-width: 1026px) {
+  .right-div {
+    width: 50vw;
+    float: right;
+    position: relative; }
+    .right-div .social-icon {
+      position: absolute;
+      left: 0; } }
+
+@media only screen and (min-width: 961px) and (orientation: landscape) {
+  .left-div {
+    width: 50vw;
+    position: relative; }
+    .left-div .social-icon {
+      position: absolute;
+      right: 0; } }
+@media only screen and (min-width: 1026px) {
+  .left-div {
+    width: 50vw;
+    position: relative; }
+    .left-div .social-icon {
+      position: absolute;
+      right: 0; } }
 
 .yellow-star {
   color: #FBBC03; }
@@ -97,6 +188,7 @@ p {
 .centered-div {
   width: auto;
   margin: 0 auto;
+  margin-top: -54px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -115,6 +207,12 @@ p {
   -ms-flex-pack: center; }
   .centered-div h2 {
     text-align: center; }
+  @media only screen and (max-height: 450px) and (orientation: landscape) {
+    .centered-div {
+      margin-top: 0; } }
+  @media only screen and (min-width: 768px) and (min-height: 450px) {
+    .centered-div h2 {
+      font-size: 36px; } }
 
 .center {
   text-align: center; }
@@ -124,6 +222,16 @@ p {
 
 .thumb-icon {
   padding: 15px 50px; }
+  @media only screen and (max-height: 450px) and (orientation: landscape) {
+    .thumb-icon {
+      padding: 0 30px; }
+      .thumb-icon i {
+        font-size: 60px; } }
+  @media only screen and (min-width: 768px) and (min-height: 450px) {
+    .thumb-icon {
+      padding: 15px 40px; }
+      .thumb-icon i {
+        font-size: 80px; } }
 
 .thumb-icon-box {
   width: 100%;
@@ -136,6 +244,9 @@ p {
   -webkit-box-pack: center;
   justify-content: center;
   -ms-flex-pack: center; }
+  @media only screen and (max-height: 450px) and (orientation: landscape) {
+    .thumb-icon-box h1 {
+      margin: 0; } }
 
 .parent-flex-div {
   min-height: calc(100vh - 132px);
