@@ -350,6 +350,23 @@ p {
 
 }
 
+.logo-class {
+  width: 30vw;
+  margin: 5px 20vw;
+  @include landscape {
+    width: 20vw;
+    margin: 5px 30vw;
+  }
+  @include ipad {
+    width: 20vw;
+    margin: 5px 30vw;
+  }
+  @include xl {
+    width: 10vw;
+    margin: 15px 60vw 15px 20vw;
+   }
+}
+
 .logo-div {
   width: 100vw;
   margin: 0 auto;
@@ -492,7 +509,16 @@ p {
 .landing-page-logo {
   .logo {
     width: 70vw;
-  margin: 5px 15vw 0px;
+    text-align: center;
+    margin: 5px 15vw 0px;
+  .logo-cars {
+    width: 80vw;
+    margin-bottom: 30px;
+    text-align: center;
+    @include ipad {
+      width: 40vw;
+    }
+  }
   @include landscape {
     width: 40vw;
     margin: 5px 30vw;
